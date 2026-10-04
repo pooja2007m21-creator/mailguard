@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MailGuard – Email Spam and Phishing Detection</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/animations.css"></head><body><div id="hdr"></div>
+<main><section class="hero"><h1>Is This Email Safe?</h1><p>Paste an email and MailGuard classifies it as Safe, Spam, or Phishing, shows its confidence, and flags suspicious words and links.</p></section>
+<section class="card" aria-labelledby="it"><h2 id="it">Email to analyze</h2>
+<label class="field" for="subject">Subject</label><input type="text" id="subject" maxlength="300" placeholder="Email subject">
+<label class="field" for="message">Message</label><textarea id="message" placeholder="Paste the email body here…"></textarea>
+<label class="field"><input type="checkbox" id="save"> Save this analysis to history (stores the email text locally in the database)</label>
+<div class="row"><button id="go" class="btn primary big">Analyze Email</button><button id="clear" class="btn danger">Clear</button></div></section>
+<section id="result" aria-live="polite" hidden></section></main>
+<script src="js/main.js"></script><script src="js/analyze.js"></script></body></html>
